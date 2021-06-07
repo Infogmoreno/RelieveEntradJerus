@@ -26,16 +26,18 @@
             </a-assets>
 
             <a-marker
-                 <a-nft
-                    type="nft"
-                    url="<https://raw.githack.com/Infogmoreno/RelieveEntradJerus/main/Marcador_NFT/Marcador_Timpano.fset>"
-                    smooth="true"
-                    smoothCount="10"
-                     smoothTolerance=".01"
-                    smoothThreshold="5">
+                id="animated-marker"
+                type="pattern"
+                preset="custom"
+                url="assets/marker.patt"
+                raycaster="objects: .clickable"
+                emitevents="true"
+                cursor="fuse: false; rayOrigin: mouse;"
+                id="markerA"
+            >
                 <a-entity
                     id="bowser-model"
-                    scale="0.1 0.1 0.1"
+                    scale="0.8308856273940213 0.8308856273940213 0.8308856273940213"
                     animation-mixer="loop: repeat"
                     gltf-model="#animated-asset"
                     class="clickable"
